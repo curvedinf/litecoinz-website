@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap.min.css" >
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="litecoinz.css">
 <link rel="shortcut icon" href="img/favicon.ico"/>
@@ -16,11 +16,21 @@
 <body>
 
 <nav class="navbar sticky-top navbar-light bg-light">
-<div class="container-fluid">
-<nav id="nav-bar" class="nav nav-pills nav-fill mx-auto">
-<a class="nav-link" data-bs-toggle="tab" href="#">&nbsp;</a>
-</nav>
+
+<div class="container-fluid d-none d-md-flex">
+<div class="nav-body nav nav-pills nav-fill mx-auto">
+<a class="btn" href="#">&nbsp;</a>
 </div>
+</div>
+
+<div class="container-fluid d-block d-md-none">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="nav-body nav nav-pills nav-fill collapse row py-2 justify-content-center" id="navbarToggleExternalContent">
+</div>
+</div>
+
 </nav>
 
 <div class="bg-dark text-secondary p-0">
@@ -53,23 +63,23 @@ selling high on another.</p>
 </thead>
 <tbody>
 <tr>
-<th scope="row"><a href="https://bisq.network/">Bisq</a></th>
+<th scope="row" class="text-break"><a href="https://bisq.network/">Bisq</a></th>
 <td>BTC</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://trade.birake.com/market/BIRAKE.LTZ_BIRAKE.BTC">Birake.com</a></th>
+<th scope="row" class="text-break"><a href="https://trade.birake.com/market/BIRAKE.LTZ_BIRAKE.BTC">Birake.com</a></th>
 <td>BTC</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://cratex.io/index.php?pair=LTZ/BTC">Cratex.io</a></th>
+<th scope="row class="text-break""><a href="https://cratex.io/index.php?pair=LTZ/BTC">Cratex.io</a></th>
 <td>BTC, LTC, DOGE, and BTCZ</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://freiexchange.com/market/LTZ/BTC">Freiexchange.com</a></th>
+<th scope="row class="text-break""><a href="https://freiexchange.com/market/LTZ/BTC">Freiexchange.com</a></th>
 <td>BTC</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://safe.trade">Safe.trade</a></th>
+<th scope="row" class="text-break"><a href="https://safe.trade">Safe.trade</a></th>
 <td>BTC</td>
 </tr>
 </tbody>
@@ -98,35 +108,35 @@ listed are among the options confirmed to track LitecoinZ.</p>
 </thead>
 <tbody>
 <tr>
-<th scope="row"><a href="https://blockfolio.com/">Blockfolio.com</a></th>
+<th scope="row" class="text-break"><a href="https://blockfolio.com/">Blockfolio.com</a></th>
 <td>Android, iOS</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://blockspot.io/coin/litecoinz/">Blockspot.io</a></th>
+<th scope="row" class="text-break"><a href="https://blockspot.io/coin/litecoinz/">Blockspot.io</a></th>
 <td>Web</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://www.coingecko.com/en/coins/litecoinz">Coingecko.com</a></th>
+<th scope="row" class="text-break"><a href="https://www.coingecko.com/en/coins/litecoinz">Coingecko.com</a></th>
 <td>Web, Android, iOS</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://coinlib.io/coin/LTZ/LitecoinZ">Coinlib.io</a></th>
+<th scope="row" class="text-break"><a href="https://coinlib.io/coin/LTZ/LitecoinZ">Coinlib.io</a></th>
 <td>Web, Android, iOS</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://coinmarketcap.com/currencies/litecoinz/">Coinmarketcap.com</a></th>
+<th scope="row" class="text-break"><a href="https://coinmarketcap.com/currencies/litecoinz/">Coinmarketcap.com</a></th>
 <td>Web, Android, iOS</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://coinpaprika.com/coin/ltz-litecoinz/">Coinpaprika.com</a></th>
+<th scope="row" class="text-break"><a href="https://coinpaprika.com/coin/ltz-litecoinz/">Coinpaprika.com</a></th>
 <td>Web, Android, iOS</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://www.cryptocompare.com/coins/ltz/overview">Cryptocompare.com</a></th>
+<th scope="row" class="text-break"><a href="https://www.cryptocompare.com/coins/ltz/overview">Cryptocompare.com</a></th>
 <td>Web, Android, iOS</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://delta.app/">Delta.app</a></th>
+<th scope="row" class="text-break"><a href="https://delta.app/">Delta.app</a></th>
 <td>Android, iOS</td>
 </tr>
 </tbody>
@@ -155,31 +165,31 @@ some known tools that support LitecoinZ.</p>
 </thead>
 <tbody>
 <tr>
-<th scope="row"><a href="http://altcoinminingpools.com/equihash/litecoinz">Altcoinminingpools.com</a></th>
+<th scope="row" class="text-break"><a href="http://altcoinminingpools.com/equihash/litecoinz">Altcoinminingpools.com</a></th>
 <td>Mining pool tracker</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://www.coincalculators.io/coin.aspx?crypto=litecoinz-mining-calculator">Coincalculators.io</a></th>
+<th scope="row" class="text-break"><a href="https://www.coincalculators.io/coin.aspx?crypto=litecoinz-mining-calculator">Coincalculators.io</a></th>
 <td>Mining profit calculator</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://www.crypto-coinz.net/coin-info/?108-Litecoinz-LTZ-ZHash-calculator/">Crypto-coinz.net</a></th>
+<th scope="row" class="text-break"><a href="https://www.crypto-coinz.net/coin-info/?108-Litecoinz-LTZ-ZHash-calculator/">Crypto-coinz.net</a></th>
 <td>Mining profit calculator</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://crypt0.zone/calculator/details/LTZ">Crypt0.zone</a></th>
+<th scope="row" class="text-break"><a href="https://crypt0.zone/calculator/details/LTZ">Crypt0.zone</a></th>
 <td>Mining profit calculator</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://minerstat.com/coin/LTZ">Minerstat.com</a></th>
+<th scope="row" class="text-break"><a href="https://minerstat.com/coin/LTZ">Minerstat.com</a></th>
 <td>Mining profit calculator</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://miningpoolstats.stream/litecoinz">Miningpoolstats.stream</a></th>
+<th scope="row" class="text-break"><a href="https://miningpoolstats.stream/litecoinz">Miningpoolstats.stream</a></th>
 <td>Mining pool tracker</td>
 </tr>
 <tr>
-<th scope="row"><a href="https://cointomine.today/calculator/coin/LTZ/">Cointomine.today</a></th>
+<th scope="row" class="text-break"><a href="https://cointomine.today/calculator/coin/LTZ/">Cointomine.today</a></th>
 <td>Mining profit calculator</td>
 </tr>
 </tbody>
@@ -198,9 +208,9 @@ some known tools that support LitecoinZ.</p>
 <div id="footer" class="px-4 py-1 bg-secondary text-end">
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" crossorigin="anonymous"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.0.slim.min.js"></script>
 <script src="./litecoinz.js"></script>
-<script>$(function() {$('#nav-links').addClass('active');});</script>
+<script>$(function() {$('.nav-links').addClass('active');});</script>
 </body>
 </html>
